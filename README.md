@@ -10,6 +10,8 @@
 - **Export parsed IPs to an Excel file** – Saves extracted data in `.xlsx` format with a timestamped filename.  
 - **Lightweight and standalone** – Requires minimal dependencies and runs locally without an internet connection.  
 
+## Demo shot
+
 ![Master Pass](demo.png)
 
 ## Sample Text
