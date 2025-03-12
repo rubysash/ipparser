@@ -73,17 +73,19 @@ def export_to_xlsx():
 # Initialize GUI
 root = ttk.Window(themename="darkly")
 root.title("IP and CIDR Extractor")
-root.geometry("600x500")
-root.resizable(False, False)
+root.geometry("600x600")
+root.resizable(True, True)
 
 # Labels (Bold, Arial 13)
 ttk.Label(root, text="Pasted Data", font=("Arial", 13, "bold")).pack(pady=(10, 5))
+
 input_text = tk.Text(root, wrap=WORD, font=("Consolas", 12), height=8)
-input_text.pack(fill=X, padx=10)
+input_text.pack(fill=BOTH, expand=True, padx=10, pady=5)  # Expands with window
 
 ttk.Label(root, text="Parsed Data", font=("Arial", 13, "bold")).pack(pady=(10, 5))
+
 output_text = tk.Text(root, wrap=WORD, font=("Consolas", 12), height=8)
-output_text.pack(fill=X, padx=10)
+output_text.pack(fill=BOTH, expand=True, padx=10, pady=5)  # Expands with window
 
 # Buttons frame
 btn_frame = ttk.Frame(root)
@@ -103,10 +105,3 @@ btn_frame.columnconfigure((0, 1, 2), weight=1)
 
 # Run the app
 root.mainloop()
-
-
-
-'''
-It's ultra annoying when people 192.168.7.14 give you info in a weird format 192.168.7.14/24 and you try to make sense of their rant but don't care about anything except the ip addresses 192.168.2.0/24 that they are trying to talk about when they duplicate 192.168.7.14 a bunch of garbage nonsense instead 192.168.7.14 of just giving you the facts 192.168.7.14. Did you miss any? 192.168.7.11
-'''
-
