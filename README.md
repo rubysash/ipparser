@@ -10,3 +10,14 @@
 - **Export parsed IPs to an Excel file** – Saves extracted data in `.xlsx` format with a timestamped filename.  
 - **Lightweight and standalone** – Requires minimal dependencies and runs locally without an internet connection.  
 
+![Master Pass](demo.png)
+
+## Sample Text
+
+```
+It's ultra annoying when people 192.168.7.14 give you info in a weird format 192.168.7.14/24 
+and you try to make sense of their rant but don't care about anything except the IP addresses 192.168.2.0/24 
+and 2001:db8::ff00:42:8329/64 that they are trying to talk about when they duplicate 192.168.7.14 
+and 2001:db8::ff00:42:8329 a bunch of garbage nonsense instead of just giving you the facts 192.168.7.14, fe80::1. 
+Did you miss any? 192.168.7.11, 2001:db8:abcd:0012::1/128.
+```
